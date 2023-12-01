@@ -14,7 +14,7 @@ function SliderComponent({ data }: any) {
     <div className="overflow-hidden">
       <Swiper
         spaceBetween={24}
-        slidesPerView={2}
+        slidesPerView={'auto'}
         loop={true}
         autoplay={{
           delay: 2500,
@@ -33,7 +33,7 @@ function SliderComponent({ data }: any) {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper w-full h-full"
       >
-        {data.slice(0, 2).map((item: any) => (
+        {data.map((item: any) => (
           <SwiperSlide key={'mobile' + item.image.url} className="swiper-slide-b ">
             <BlogComponent {...item} className="" />
           </SwiperSlide>

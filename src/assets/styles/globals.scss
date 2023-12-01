@@ -79,18 +79,30 @@ body {
       width: 50% !important;
     }
   }
+  .mySwiper {
+    .swiper-wrapper {
+      max-width: 375px !important;
+    }
+  }
   .swiper-slide-b {
+    max-width: 375px;
     width: 80% !important;
     display: flex;
     justify-content: center;
     align-items: center;
     &.swiper-slide-active {
-      width: 100% !important;
+      width: 70% !important;
+    }
+    img {
+      display: block;
+      width: auto;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
   .swiper-slide-b:nth-child(2n) {
-    width: 80%;
+    width: 70%;
   }
 
   .swiper-slide-b:nth-child(3n) {

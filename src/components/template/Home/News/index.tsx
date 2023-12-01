@@ -60,8 +60,7 @@ function NewsComponent() {
           />
         </div>
       </div>
-      {/* <div className="flex flex-col gap-6 lg:gap-8"> */}
-      <div className="flex flex-col gap-6 lg:gap-8 lg:block md:block hidden">
+      <div className="flex flex-col gap-6 lg:gap-8 md:flex hidden">
         {blogs.map((item: any) => {
           return <BlogComponent key={item.title} {...item} />;
         })}
